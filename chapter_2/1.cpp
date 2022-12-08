@@ -3,6 +3,6 @@
 
 int main()
 {
-	string yourname = "somename", youraddress = "someaddress";
+	std::string yourname = "somename", youraddress = "someaddress";
 	std::cout << yourname << ' ' << youraddress << std::endl; 
 }

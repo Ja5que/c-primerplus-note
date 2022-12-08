@@ -1,0 +1,3 @@
+Enter the number of hours: 
+Enter the number of minutes: 
+Times: 123 0
