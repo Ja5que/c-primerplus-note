@@ -1,76 +1,8 @@
-Enter the sales of book <<C++ for Fools>> each month.
-Enter the sales of book in Year 1 Jan 
-Enter the sales of book in Year 1 Feb 
-Enter the sales of book in Year 1 Mar 
-Enter the sales of book in Year 1 Apr 
-Enter the sales of book in Year 1 May 
-Enter the sales of book in Year 1 Jun 
-Enter the sales of book in Year 1 July 
-Enter the sales of book in Year 1 Aug 
-Enter the sales of book in Year 1 Sept 
-Enter the sales of book in Year 1 Oct 
-Enter the sales of book in Year 1 Nov 
-Enter the sales of book in Year 1 Dec 
-Enter the sales of book in Year 2 Jan 
-Enter the sales of book in Year 2 Feb 
-Enter the sales of book in Year 2 Mar 
-Enter the sales of book in Year 2 Apr 
-Enter the sales of book in Year 2 May 
-Enter the sales of book in Year 2 Jun 
-Enter the sales of book in Year 2 July 
-Enter the sales of book in Year 2 Aug 
-Enter the sales of book in Year 2 Sept 
-Enter the sales of book in Year 2 Oct 
-Enter the sales of book in Year 2 Nov 
-Enter the sales of book in Year 2 Dec 
-Enter the sales of book in Year 3 Jan 
-Enter the sales of book in Year 3 Feb 
-Enter the sales of book in Year 3 Mar 
-Enter the sales of book in Year 3 Apr 
-Enter the sales of book in Year 3 May 
-Enter the sales of book in Year 3 Jun 
-Enter the sales of book in Year 3 July 
-Enter the sales of book in Year 3 Aug 
-Enter the sales of book in Year 3 Sept 
-Enter the sales of book in Year 3 Oct 
-Enter the sales of book in Year 3 Nov 
-Enter the sales of book in Year 3 Dec 
-The total sales in Year 1 is 11
-Jan : 2
-Feb : 9
-Mar : 0
-Apr : 0
-May : 0
-Jun : 0
-July : 0
-Aug : 0
-Sept : 0
-Oct : 0
-Nov : 0
-Dec : 0
-The total sales in Year 2 is 0
-Jan : 0
-Feb : 0
-Mar : 0
-Apr : 0
-May : 0
-Jun : 0
-July : 0
-Aug : 0
-Sept : 0
-Oct : 0
-Nov : 0
-Dec : 0
-The total sales in Year 3 is 0
-Jan : 0
-Feb : 0
-Mar : 0
-Apr : 0
-May : 0
-Jun : 0
-July : 0
-Aug : 0
-Sept : 0
-Oct : 0
-Nov : 0
-Dec : 0
+How many cars do you wish to catalog?  
+Please enter the maker:  
+Please enter the year made:  
+Please enter the maker:  
+Please enter the year made:  
+Here is your collection: 
+1952 Hudson Hornet
+1951 Hudson Hornet

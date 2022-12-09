@@ -1,39 +1,40 @@
-#include<iostream>
-#include<string>
+#include <cstring>
+#include <iostream>
+#include <string>
 #define clr std::cout << std::endl;
 
 template <typename T>
-void getsth(const std::string &tip, T &now){
-	std::cout << tip << ' ';
-	std::cin >> now;
-	return;
+void getsth(const std::string &tip, T &now) {
+    std::cout << tip << ' ';
+    std::cin >> now;
+    return;
 };
 
 template <typename T>
-void getsthl(const std::string &tip, T &now){
-	std::cout << tip << ' ';
-	getline(std::cin, now);
-	return;
+void getsthl(const std::string &tip, T &now) {
+    std::cout << tip << ' ';
+    getline(std::cin, now);
+    return;
 };
 
-struct pizza{
-	std::string name;
-	double diameter, weight;
+struct pizza {
+    std::string name;
+    double diameter, weight;
 };
 
-int main()
-{
-	pizza *now = new pizza;
-	getsthl("Enter the pizza company: ", now->name);
-	clr;
-	getsth("Enter the diameter of pizza: ", now->diameter);
-	clr;
-	getsth("Enter the weight of pizza: ", now->weight);
-	clr;
-	std::cout << "Here is the pizza information: " << std::endl;
-	std::cout << "Company: " << now->name << std::endl;
-	std::cout.precision(6);
-	std::cout << "Diameter: " << now->diameter << std::endl;
-	std::cout << "Weight: " << now->weight << std::endl;
-	return 0;
+int main() {
+    char now[100010];
+    int num = 0;
+    std::cout << "Enter a word (type 'done' to stop the program.):"
+              << std::endl;
+    clr;
+    while (true) {
+        std::cin >> now;
+        if (strcmp(now, "done") != 0)
+            num++;
+        else
+            break;
+    }
+    std::cout << "You entered a total of " << num << " words." << std::endl;
+    return 0;
 }

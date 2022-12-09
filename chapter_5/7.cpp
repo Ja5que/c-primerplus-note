@@ -1,39 +1,43 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 #define clr std::cout << std::endl;
 
 template <typename T>
-void getsth(const std::string &tip, T &now){
-	std::cout << tip << ' ';
-	std::cin >> now;
-	return;
+void getsth(const std::string &tip, T &now) {
+    std::cout << tip << ' ';
+    std::cin >> now;
+    return;
 };
 
 template <typename T>
-void getsthl(const std::string &tip, T &now){
-	std::cout << tip << ' ';
-	getline(std::cin, now);
-	return;
+void getsthl(const std::string &tip, T &now) {
+    std::cout << tip << ' ';
+    getline(std::cin, now);
+    return;
 };
 
-struct pizza{
-	std::string name;
-	double diameter, weight;
+struct car {
+    std::string producer;
+    int year;
 };
 
-int main()
-{
-	pizza now;
-	getsthl("Enter the pizza company: ", now.name);
-	clr;
-	getsth("Enter the diameter of pizza: ", now.diameter);
-	clr;
-	getsth("Enter the weight of pizza: ", now.weight);
-	clr;
-	std::cout << "Here is the pizza information: " << std::endl;
-	std::cout << "Company: " << now.name << std::endl;
-	std::cout.precision(6);
-	std::cout << "Diameter: " << now.diameter << std::endl;
-	std::cout << "Weight: " << now.weight << std::endl;
-	return 0;
+int main() {
+    int num;
+    getsth("How many cars do you wish to catalog? ", num);
+    clr;
+    std::cin.get();
+    car *now = new car[num];
+    for (int i = 1; i <= num; i++) {
+        getsthl("Please enter the maker: ", now[i - 1].producer);
+        clr;
+        getsth("Please enter the year made: ", now[i - 1].year);
+        clr;
+        std::cin.get();
+    }
+    std::cout << "Here is your collection: " << std::endl;
+    for (int i = 1; i <= num; i++) {
+        std::cout << now[i - 1].year << ' ' << now[i - 1].producer << std::endl;
+    }
+    delete[] now;
+    return 0;
 }
