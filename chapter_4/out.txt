@@ -1,0 +1,5 @@
+For the 1 times, Enter result of the 40 meters runing time:  
+For the 2 times, Enter result of the 40 meters runing time:  
+For the 3 times, Enter result of the 40 meters runing time:  
+The all three time results are: 12,123,22.
+The average result: 52.3333
