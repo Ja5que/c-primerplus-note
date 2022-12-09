@@ -1,0 +1,31 @@
+*  tot	
+第二章通过简单的C++程序作为导入，介绍了封装之后的C++程序基本结构中的几个重点：“main函数，C++风格的注释和格式化，预处理阶段，头文件和名称空间”
+** namespace
+namespace是C++早期为解决合并文件时全局作用域冲突而引入的特性，他允许类，对象，函数聚集在某个名字下，作为全局作用域的细分
+基本格式如下：
+namespace identifier
+{
+    entities;
+}
+需要注意的是在使用namesapce 的时候可人为指定作用域
+{
+	using namespace A;\\ A作用域开始
+	...
+	some other code exposed in namespace A 
+	...
+	using namespace B;\\ B作用域开始
+	{
+		using namespace C;\\ C作用域开始
+		...
+		some other code exposed in namespace ABC 
+		...
+		\\C作用域结束
+	}
+	\\ A B作用域结束
+}
+在实际编程中，namespace是被实践证明的useless特性
+c++的头文件往往在大型工程中多次嵌套已满足对象复杂的重用-扩展关系，而在头文件里引入的namespace 无法在当前文件里查出，同时考虑到大型工程中整体检查依赖的花销，不应在头文件中使用namespace
+而在cpp中使用namespace又失却了其强大的功能，且可以被宏替代
+建议简写和复杂的依赖关系使用类继承或者模式设计的方式解决，如果非得使用namespace，请采用单个引入的方式
+如： using std::cin;
+** c++风格读写
