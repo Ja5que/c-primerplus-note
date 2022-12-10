@@ -1,0 +1,5 @@
+Enter the number of contributor:  Grand patron: 
+none
+patron: 
+asd 100
+asd 100
