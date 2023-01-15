@@ -1,0 +1,3 @@
+Listing Mr. E's counts of things:
+Sum of the array is 888
+Listing Mr. E's debts:

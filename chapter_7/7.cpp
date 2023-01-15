@@ -28,8 +28,8 @@ double *Fill_array(double *arr) {
     }
     return arr + len;
 }
-void Show_array(double *arr_beg, double *arr_end) {
-    for (double *arr_iter = arr_beg; arr_iter != arr_end; arr_iter++) {
+void Show_array(const double *arr_beg, const double *arr_end) {
+    for (const double *arr_iter = arr_beg; arr_iter != arr_end; arr_iter++) {
         std::cout << *arr_iter << ' ';
     }
     std::cout << std::endl;
