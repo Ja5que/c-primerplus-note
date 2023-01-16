@@ -1,0 +1,2 @@
+*Please input the score, max 10
+The average score is 3.33333
